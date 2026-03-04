@@ -1,0 +1,11 @@
+transaction_id,user_id,product,category,price,quantity,transaction_time,country,payment_method
+1001,U101,Laptop,Electronics,1200,1,2025-01-10 09:15:22,USA,Credit Card
+1002,U102,Mouse,Electronics,25,2,2025-01-10 10:05:11,USA,PayPal
+1003,U103,Desk Chair,Furniture,210,1,2025-01-11 11:45:33,Canada,Credit Card
+1004,U101,Monitor,Electronics,320,1,2025-01-11 14:22:08,USA,Debit Card
+1005,U104,Coffee Table,Furniture,150,1,2025-01-12 08:55:12,UK,PayPal
+1006,U105,Keyboard,Electronics,80,1,2025-01-12 12:15:44,Germany,Credit Card
+1007,U102,Laptop Stand,Accessories,45,1,2025-01-12 13:02:09,USA,Credit Card
+1008,U106,Webcam,Electronics,95,1,2025-01-13 09:48:51,USA,Debit Card
+1009,U103,Notebook,Stationery,5,5,2025-01-13 15:35:20,Canada,PayPal
+1010,U107,Desk Lamp,Furniture,60,1,2025-01-14 18:20:31,UK,Credit Card

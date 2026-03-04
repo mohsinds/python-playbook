@@ -6,7 +6,7 @@ from time import sleep
 def log_execution_time(func):
     def decorator(*args, **kwargs):
         start_time = datetime.now()
-        sleep(random.uniform(0.1,1)) # to simulate a processing behavior
+        # sleep(random.uniform(0.1,1)) # to simulate a processing behavior
         result = func(*args, **kwargs)
         end_time = datetime.now()
 
