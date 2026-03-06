@@ -6,7 +6,8 @@ from collections import defaultdict
 from datetime import datetime
 from typing import Any
 
-from src.app.services.math_service import multiply
+from app.database.db import Database
+from app.services.math_service import multiply
 
 CSV_PATH = "files/transactions.csv"
 TIME_FMT = "%Y-%m-%d %H:%M:%S"
@@ -170,6 +171,25 @@ def top_n_users_by_spending(
 
 
 def main() -> None:
+    with Database() as db:
+        # insert
+        new_user_id = db.insert_user(
+            username="mohsin",
+            email="mohsin@example.com",
+            password="123456"
+        )
+        print("Inserted user id:", new_user_id)
+
+        # get one
+        user = db.get_user_by_id(new_user_id)
+        print("Single user:", user)
+
+        # get all
+        users = db.get_all_users()
+        print("All users:", users)
+
+
+    return
     # Load and clean (Task 6)
     raw = load_transactions(CSV_PATH)
     rows = clean_data(raw)
